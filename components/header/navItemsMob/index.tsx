@@ -3,7 +3,7 @@ import Link from "next/link";
 import sun from "@/public/assets/Icon-sun.svg";
 import moon from "@/public/assets/Icon-moon.svg";
 
-const NavItem = ({ themeStyles, showMenu, toggletheme, theme }) => {
+const NavItemMob = ({ themeStyles, showMenu, toggletheme, theme }) => {
   const navStyles =
     "absolute flex flex-col h-screen top-[64px] left-0  w-full md:hidden";
   const buttonStyles = "w-full rounded-xl py-[6px] mb-4";
@@ -35,7 +35,7 @@ const NavItem = ({ themeStyles, showMenu, toggletheme, theme }) => {
               }
             >
               <Link href="/assets/resume.pdf" download={true}>
-                Download Resume  
+                Download Resume
               </Link>
             </button>
           </div>
@@ -45,4 +45,4 @@ const NavItem = ({ themeStyles, showMenu, toggletheme, theme }) => {
   );
 };
 
-export default NavItem;
+export default NavItemMob;
